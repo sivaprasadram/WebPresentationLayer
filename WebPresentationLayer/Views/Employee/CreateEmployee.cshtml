@@ -1,0 +1,46 @@
+﻿@model ViewModels.ViewModels.EmployeeViewModel
+@{
+    ViewData["Title"] = "Create Employee";
+
+}
+
+<form method="post" >
+
+    <div>
+
+        <div>
+            @Html.LabelFor(e=>e.LastName)
+            @Html.TextBoxFor(e=>e.LastName)
+        </div>
+        <div>
+            @Html.LabelFor(e=>e.FirstName)
+            @Html.TextBoxFor(e=>e.FirstName)
+        </div>
+
+        <div>
+            @Html.LabelFor(e=>e.Salary)
+            @Html.TextBoxFor(e=>e.Salary)
+        </div>
+        <div>
+            @Html.LabelFor(e=>e.Isactive)
+            @Html.TextBoxFor(e=>e.Isactive)
+        </div>
+
+        <div>
+            @Html.LabelFor(e=>e.Address)
+            @Html.TextBoxFor(e=>e.Address)
+        </div>
+        <div>
+            @Html.LabelFor(e=>e.City)
+            @Html.TextBoxFor(e=>e.City)
+        </div>
+
+         <div>
+           <input type="submit" value="Save"/>
+           <input type="reset" value="Reset"/>
+         </div>
+
+
+    </div>
+
+</form>
